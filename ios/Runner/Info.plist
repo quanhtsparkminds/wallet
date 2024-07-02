@@ -25,17 +25,17 @@
 		<key>LSRequiresIPhoneOS</key>
 		<true/>
 		<key>NSCalendarsUsageDescription</key>
-		<string>Core app cần sử dụng lịch.</string>
+		<string>Wallet cần sử dụng lịch.</string>
 		<key>NSCameraUsageDescription</key>
-		<string>Core app sử dụng camera để chụp hình ảnh đại diện, hình ảnh công việc, dịch hại.</string>
+		<string>Wallet sử dụng camera để chụp hình ảnh đại diện, hình ảnh công việc, dịch hại.</string>
 		<key>NSLocationAlwaysUsageDescription</key>
 		<string>Hãy bật vị trí để có thể quản lý đơn hàng của bạn.</string>
 		<key>NSLocationWhenInUseUsageDescription</key>
 		<string>Hãy bật vị trí để có thể quản lý đơn hàng của bạn.</string>
 		<key>NSPhotoLibraryUsageDescription</key>
-		<string>Core app cần sử dụng thư viện ảnh để chọn hình ảnh đại diện, hình ảnh công việc, dịch hại.</string>
+		<string>Wallet cần sử dụng thư viện ảnh để chọn hình ảnh đại diện, hình ảnh công việc, dịch hại.</string>
 		<key>NSSpeechRecognitionUsageDescription</key>
-		<string>Core app cần sử dụng micro.</string>
+		<string>Wallet cần sử dụng micro.</string>
 		<key>UIApplicationSupportsIndirectInputEvents</key>
 		<true/>
 		<key>UILaunchStoryboardName</key>

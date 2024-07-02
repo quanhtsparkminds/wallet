@@ -2,5 +2,5 @@
 
 FLUTTER_TARGET=lib/main_stg.dart
 ASSET_PREFIX=stg
-BUNDLE_NAME=Core App (stg)
-BUNDLE_DISPLAY_NAME=Core App (stg)
+BUNDLE_NAME=Wallet (stg)
+BUNDLE_DISPLAY_NAME=Wallet (stg)

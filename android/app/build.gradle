@@ -39,18 +39,18 @@ android {
     productFlavors {
         dev {
             dimension "flavor-type"
-            applicationId "com.coreapp.dev.app"
-            resValue "string", "app_name", "Core App (dev)"
+            applicationId "com.cryptowallet.dev.app"
+            resValue "string", "app_name", "Wallet (dev)"
         }
         stg {
             dimension "flavor-type"
-            applicationId "com.coreapp.stg.app"
-            resValue "string", "app_name", "Core App (stg)"
+            applicationId "com.cryptowallet.stg.app"
+            resValue "string", "app_name", "Wallet (stg)"
         }
         prod {
             dimension "flavor-type"
             applicationId "com.core.app"
-            resValue "string", "app_name", "Core App"
+            resValue "string", "app_name", "Wallet"
         }
     }
 

@@ -82,7 +82,6 @@ flutter:
     - .env.stg
     - .env.prod
 
-    - assets/langs/
     - assets/images/
     - assets/icons/
     - assets/svg/
@@ -92,23 +91,23 @@ flavorizr:
   flavors:
     dev:
       app:
-        name: "Core App (dev)"
+        name: "Wallet (dev)"
       android:
-        applicationId: "com.coreapp.dev.app"
+        applicationId: "com.cryptowallet.dev.app"
       ios:
-        bundleId: "com.coreapp.dev.app"
+        bundleId: "com.cryptowallet.dev.app"
 
     stg:
       app:
-        name: "Core App (stg)"
+        name: "Wallet (stg)"
       android:
-        applicationId: "com.coreapp.stg.app"
+        applicationId: "com.cryptowallet.stg.app"
       ios:
-        bundleId: "com.coreapp.st.app"
+        bundleId: "com.cryptowallet.st.app"
 
     prod:
       app:
-        name: "Core App"
+        name: "Wallet"
       android:
         applicationId: "com.core.app"
       ios:
