@@ -1,10 +1,9 @@
 # myapp
 
-version SDK : stable. 3.10.5
+version SDK : stable. 3.19.0
 
 # sparkminds-flutter-base
 
-Flutter-sdk: 3.10.6
 Java 18.0.2.1
 
 # Run it for flavor
