@@ -35,112 +35,112 @@ Deprecated Gradle features were used in this build, making it incompatible with 
 <https://developer.android.com/studio/publish/app-signing#sign-apk>
 <https://docs.flutter.dev/deployment/android>
 
+### Struture
 
-#Struture
+    .
+    ├── /assets
+    │   ├── /app_icon                                                # app-icon (png)
+    │   │   └── ...
+    │   ├── /fonts                                                   # font-family in app
+    │   │   └── ...
+    │   ├── /icons
+    │   │   ├── ...
+    │   │   ├── ...
+    │   │   └── ...
+    │   ├── /images
+    │   │   ├── ...
+    │   └── /svg
+    │       └── ...
+    └── /lib
+    │   ├── /commands
+    │   │   └── /core
+    |   |      └── ...
+    |   |   └── /api_client
+    |   |      └── /interceptor
+    │   │         └── auth_interceptor.dart
+    │   │         └── dio_cache_interceptor.dart
+    |   |      └── api_client.dart
+    |   |      └── api_config.dart
+    |   |      └── api_result.dart
+    |   |      └── dio_client.dart
+    |   |      └── dio_exception.dart
+    │   │   └── navigate
+    │   │   └── ...
+    │   ├── /config
+    │   │   └── main_app_service.dart
+    │   │   └── app_initlize.dart
+    │   │   └── sprefs.dart
+    │   │   └── ...
+    │   ├── /constants
+    │   │   └── app_color.dart
+    │   │   └── app_key.dart
+    │   │   └── size.dart
+    │   │   └── ...
+    │   ├── /domain
+    │   │   └── local_storage.dart
+    │   │   └── model.dart
+    |   |      └── /authe_model
+    |   |      └── /profile_model
+    │   │   └── respositories.dart
+    |   |      └── auth_respository.dart
+    |   |      └── ...
+    │   ├── /event
+    │   │   └── ...
+    │   ├── /feature
+    │   │   └── /launch
+    |   |      └── /bloc-cubit
+    |   |      └── /view
+    |   |      └── /widgets
+    |   |      └── launch_screen_view.dart
+    │   │   └── /home
+    |   |      └── /bloc-cubit
+    |   |         └── home_cubit.dart
+    |   |         └── home_state.dart
+    |   |      └── /view
+    |   |      └── /widgets
+    |   |      └── home_screen_view.dart
+    │   ├── /gen
+    │   │   └── assets.gen.dart
+    │   ├── /main_model
+    │   │   └── main_app_state.dart                              # Load app and main state all in app
+    │   │   └── network_connection.dart                          # Load app and main state all in app
+    │   ├── /routing
+    │   │   └── /page_configuration
+    |   |      └── auth_page_configuration.dart
+    |   |      └── launch_page_configuration.dart
+    |   |      └── home_page_configuration.dart
+    │   │   └── app_route_parser.dart
+    │   │   └── app_router.dart
+    │   │   └── page_configuration.dart
+    │   ├── /shared
+    │   │   └── /helps
+    |   |      └── regex.dart
+    |   |      └── spref.dart
+    |   |      └── storage_secure.dart
+    |   |      └── translations.dart
+    │   │   └── /languages
+    |   |      └── en.dart
+    |   |      └── translation_key.dart
+    |   |      └── vi.dart
+    │   │   └── /mixins
 
-├── /assets
-│   ├── /app_icon
-│   │   └── ...
-│   ├── /fonts
-│   │   └── ...
-│   ├── /icons
-│   │   ├── ...
-│   │   ├── ...
-│   │   └── ...
-│   ├── /images
-│   │   ├── ...
-│   └── /svg
-│       └── ...
-└── /lib
-│   ├── /commands
-│   │   └── /core
-|   |      └── ...
-|   |   └── /api_client
-|   |      └── /interceptor
-│   │         └── auth_interceptor.dart
-│   │         └── dio_cache_interceptor.dart
-|   |      └── api_client.dart
-|   |      └── api_config.dart
-|   |      └── api_result.dart
-|   |      └── dio_client.dart
-|   |      └── dio_exception.dart
-│   │   └── navigate
-│   │   └── ...
-│   ├── /config
-│   │   └── main_app_service.dart
-│   │   └── app_initlize.dart
-│   │   └── sprefs.dart
-│   │   └── ...
-│   ├── /constants
-│   │   └── app_color.dart
-│   │   └── app_key.dart
-│   │   └── size.dart
-│   │   └── ...
-│   ├── /domain
-│   │   └── local_storage.dart
-│   │   └── model.dart
-|   |      └── /authe_model
-|   |      └── /profile_model
-│   │   └── respositories.dart
-|   |      └── auth_respository.dart
-|   |      └── ...
-│   ├── /event
-│   │   └── ...
-│   ├── /feature
-│   │   └── /launch
-|   |      └── /bloc-cubit
-|   |      └── /view
-|   |      └── /widgets
-|   |      └── launch_screen_view.dart
-│   │   └── /home
-|   |      └── /bloc-cubit
-|   |         └── home_cubit.dart
-|   |         └── home_state.dart
-|   |      └── /view
-|   |      └── /widgets
-|   |      └── home_screen_view.dart
-│   ├── /gen
-│   │   └── assets.gen.dart
-│   ├── /main_model
-│   │   └── main_app_state.dart // Load app and main state all in app
-│   │   └── network_connection.dart // Load app and main state all in app
-│   ├── /routing
-│   │   └── /page_configuration
-|   |      └── auth_page_configuration.dart
-|   |      └── launch_page_configuration.dart
-|   |      └── home_page_configuration.dart
-│   │   └── app_route_parser.dart
-│   │   └── app_router.dart
-│   │   └── page_configuration.dart
-│   ├── /shared
-│   │   └── /helps
-|   |      └── regex.dart
-|   |      └── spref.dart
-|   |      └── storage_secure.dart
-|   |      └── translations.dart
-│   │   └── /languages
-|   |      └── en.dart
-|   |      └── translation_key.dart
-|   |      └── vi.dart
-│   │   └── /mixins
-
-|   |      └── validator_mixin.dart
-│   │   └── /utils
-|   |      └── /universal_file
-|   |         └── ...
-|   |      └── /validator
-|   |         └── ...
-|   |      └── format.dart
-|   |      └── screen_size.dart
-|   |      └── time_utils.dart
-│   │   └── /widgets
-|   |      └── /app_text
-|   |      └── /app_dropdown
-|   |      └── ...
-|   └── app_initialized
-|   └── theme.dart
-|   └── flavor.dart
-|   └── main.dart
-|   └── main_dev.dart
-|   └── main_stg.dart
-|   └── main_prod.dart
+    |   |      └── validator_mixin.dart
+    │   │   └── /utils
+    |   |      └── /universal_file
+    |   |         └── ...
+    |   |      └── /validator
+    |   |         └── ...
+    |   |      └── format.dart
+    |   |      └── screen_size.dart
+    |   |      └── time_utils.dart
+    │   │   └── /widgets
+    |   |      └── /app_text
+    |   |      └── /app_dropdown
+    |   |      └── ...
+    |   └── app_initialized
+    |   └── theme.dart
+    |   └── flavor.dart
+    |   └── main.dart
+    |   └── main_dev.dart
+    |   └── main_stg.dart
+    |   └── main_prod.dart
