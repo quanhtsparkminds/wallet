@@ -2,7 +2,7 @@ import 'dart:core';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:myapp/constants/app_color.dart';
+import 'package:myapp/commands/core/app_color.dart';
 import 'package:myapp/shared/widgets/app_button/app_button.types.dart';
 
 class AppButton extends StatelessWidget {

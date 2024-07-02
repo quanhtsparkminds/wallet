@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:myapp/constants/app_color.dart';
-import 'package:myapp/constants/styles.dart';
+import 'package:myapp/commands/core/app_color.dart';
+import 'package:myapp/commands/core/app_style.dart';
 import 'package:myapp/model/main_app_state.dart';
 import 'package:myapp/model/main_login_model.dart';
 import 'package:myapp/model/network_connection_model.dart';

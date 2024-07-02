@@ -3,8 +3,8 @@
 import 'dart:convert';
 
 import 'package:connectivity_plus/connectivity_plus.dart';
-import 'package:myapp/commands/api_client/dio_client.dart';
-import 'package:myapp/commands/api_client/dio_exception.dart';
+import 'package:myapp/domain/api_client/dio_client.dart';
+import 'package:myapp/domain/api_client/dio_exception.dart';
 
 String PARAM_STATUS_CODE = 'status_code';
 String PARAM_MESSAGE = 'message';

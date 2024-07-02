@@ -1,4 +1,4 @@
-import 'package:myapp/constants/app_key.dart';
+import 'package:myapp/commands/core/app_key.dart';
 
 class ApiConfig {
   ApiConfig._();

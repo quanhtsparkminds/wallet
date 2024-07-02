@@ -1,6 +1,6 @@
 import 'package:currency_text_input_formatter/currency_text_input_formatter.dart';
 import 'package:flutter/material.dart';
-import 'package:myapp/constants/styles.dart';
+import 'package:myapp/commands/core/app_style.dart';
 import 'package:myapp/shared/widgets/custom_text_field.dart';
 
 class CustomTitle extends StatelessWidget {

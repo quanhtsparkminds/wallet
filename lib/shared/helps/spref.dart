@@ -1,5 +1,5 @@
 import 'package:myapp/config/sprefs_core.dart';
-import 'package:myapp/constants/app_key.dart';
+import 'package:myapp/commands/core/app_key.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SPref extends SPrefCore {

@@ -1,9 +1,9 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:myapp/commands/core/app_color.dart';
 import 'package:myapp/commands/core/app_string.dart';
 import 'package:myapp/commands/core/screen_edit.dart';
-import 'package:myapp/constants/app_color.dart';
 import 'package:myapp/feature/authentication/signin/login_cubit/login_cubit.dart';
 import 'package:myapp/feature/authentication/signin/views/timer_count_down_otp.dart';
 import 'package:myapp/shared/utils/validator/validator.dart';
@@ -18,7 +18,8 @@ class ConfirmOptScreen extends StatefulWidget {
   final LoginCubit bloc;
   final String phone;
   final CountdownController countdownController;
-  const ConfirmOptScreen(this.bloc, this.phone, {super.key, required this.countdownController});
+  const ConfirmOptScreen(this.bloc, this.phone,
+      {super.key, required this.countdownController});
   @override
   State<ConfirmOptScreen> createState() => _ConfirmOptScreenState();
 }
@@ -205,7 +206,7 @@ class _ConfirmOptScreenState extends State<ConfirmOptScreen> {
           const SizedBox(height: 10),
           AppBtn(
             text: AppString.nextBtn,
-            callback: ()async {
+            callback: () async {
               await bloc.submitOtp(_otpCode, context);
             },
           ),

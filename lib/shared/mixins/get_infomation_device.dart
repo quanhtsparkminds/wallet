@@ -1,4 +1,4 @@
-import 'package:myapp/constants/app_key.dart';
+import 'package:myapp/commands/core/app_key.dart';
 import 'package:myapp/shared/helps/spref.dart';
 import 'package:platform_device_id/platform_device_id.dart';
 

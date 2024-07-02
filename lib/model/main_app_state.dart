@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:myapp/constants/app_key.dart';
+import 'package:myapp/commands/core/app_key.dart';
 import 'package:myapp/domain/model/auth_model/user_model.dart';
 import 'package:myapp/domain/repositories/user_repo.dart';
 import 'package:myapp/routing/page_configuration/authen_page_configuration.dart';

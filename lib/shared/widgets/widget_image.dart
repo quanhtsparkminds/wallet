@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:myapp/constants/app_color.dart';
+import 'package:myapp/commands/core/app_color.dart';
 import 'package:myapp/gen/assets.gen.dart';
 
 import 'widget_image_network.dart';

@@ -1,9 +1,9 @@
 import 'package:dio/dio.dart';
 import 'package:dio_cache_interceptor/dio_cache_interceptor.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:myapp/commands/api_client/api_config.dart';
-import 'package:myapp/commands/api_client/interceptor/auth_interceptor.dart';
-import 'package:myapp/commands/api_client/interceptor/dio_cache_interceptor.dart';
+import 'package:myapp/domain/api_client/api_config.dart';
+import 'package:myapp/domain/api_client/interceptor/auth_interceptor.dart';
+import 'package:myapp/domain/api_client/interceptor/dio_cache_interceptor.dart';
 import 'package:myapp/config/env.dart';
 
 const title = 'ApiUtils';

@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 import 'package:geolocator/geolocator.dart';
 import 'package:myapp/config/location_config.dart';
-import 'package:myapp/constants/app_color.dart';
+import 'package:myapp/commands/core/app_color.dart';
 import 'package:myapp/gen/assets.gen.dart';
 import 'package:myapp/shared/widgets/app_text/text_custom.dart';
 import 'package:permission_handler/permission_handler.dart';

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/constants/app_color.dart';
+import 'package:myapp/commands/core/app_color.dart';
 import 'package:myapp/gen/assets.gen.dart';
 import 'package:myapp/shared/widgets/widget_circle_avatar.dart';
 

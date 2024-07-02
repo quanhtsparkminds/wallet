@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/widgets.dart';
-import 'package:myapp/shared/widgets/app_spacing.dart';
+import 'package:myapp/commands/core/app_spacing.dart';
 
 EdgeInsets getScreenPadding(BuildContext context,
     {double padding = AppSpacing.x16}) {

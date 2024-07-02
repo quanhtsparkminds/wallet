@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/constants/app_color.dart';
+import 'package:myapp/commands/core/app_color.dart';
 import 'package:myapp/constants/size_constant.dart';
 import 'package:myapp/gen/assets.gen.dart';
-import 'package:myapp/shared/widgets/app_spacing.dart';
+import 'package:myapp/commands/core/app_spacing.dart';
 import 'package:myapp/shared/widgets/app_text/app_text.types.dart';
 
 const double appButtonIconSize = 20;
