@@ -27,8 +27,6 @@ class AppRouterDelegate extends RouterDelegate<PageConfiguration>
 
   @override
   Widget build(BuildContext context) {
-    safePrintForRelease('RouterDelegate.build()');
-    // Bind to the app state we care about
     bool hasBootstrapped = mainAppState.hasBootstrapped;
     bool hasSetInitialRoute = mainAppState.hasSetInitialRoute;
     bool showSplash = hasBootstrapped == false || hasSetInitialRoute == false;

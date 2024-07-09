@@ -57,7 +57,7 @@ class AuthLogInterceptor extends Interceptor {
     _printResponse(response);
     logPrint('*************************************************');
     // return handler.next(response);
-    return super.onResponse(response, handler);
+    return handler.next(response);
   }
 
   @override
@@ -72,7 +72,7 @@ class AuthLogInterceptor extends Interceptor {
       }
       logPrint('*************************************************');
     }
-    return super.onError(err, handler);
+    return handler.next(err);
   }
 
   void _printResponse(Response response) {

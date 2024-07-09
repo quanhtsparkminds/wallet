@@ -7,7 +7,6 @@ import 'package:myapp/app_initialized.dart';
 import 'package:myapp/commands/bootstrap_command.dart';
 import 'package:myapp/config/application.dart';
 import 'package:myapp/feature/authentication/signin/login_cubit/login_cubit.dart';
-import 'package:myapp/localizations/app_localizations.dart';
 import 'package:myapp/model/main_app_state.dart';
 import 'package:myapp/model/main_login_model.dart';
 import 'package:myapp/model/network_connection_model.dart';
@@ -26,15 +25,14 @@ Future<void> runMain() async {
   Application application = Application();
   await application.setup();
 
-  /// Create core models & services
   MainAppState mainAppState =
       MainAppState(userRepository: application.userRepository);
   MainLoginState mainLoginState = MainLoginState();
-
   NetworkState networkState = NetworkState();
   await SentryFlutter.init(
     (options) {
-      options.dsn = 'https://example@sentry.io/add-your-dsn-here';
+      options.dsn =
+          'https://09d2330dd0f0c0aac1ac1ea6a1125f8d@o4506267090157568.ingest.us.sentry.io/4507542378119168';
     },
     appRunner: () => runApp(
       MultiProvider(
@@ -88,10 +86,10 @@ class _AppBootstrapperState extends State<_AppBootstrapper> {
       supportedLocales: const [
         Locale('en', 'US'),
       ],
-      localizationsDelegates: [
-        AppLocalizations.delegate,
+      localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
       ],
     );
   }

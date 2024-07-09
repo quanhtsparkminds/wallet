@@ -15,11 +15,9 @@ class AppRouteParser extends RouteInformationParser<PageConfiguration> {
 
   @override
   RouteInformation restoreRouteInformation(PageConfiguration configuration) {
-    // Ask the applink to give us a string
     String location = configuration.location;
     safePrintForRelease('restoreRouteInfo: $location');
 
-    // Pass that string back to the OS so it can update the url bar
     return RouteInformation(location: location);
   }
 }

@@ -7,9 +7,10 @@ abstract class AbstractModel extends EasyNotifier {}
 class NetworkState extends AbstractModel {
   NetworkState();
 
-  final StreamController<bool> counterController =  StreamController<bool>();
+  final StreamController<bool> counterController = StreamController<bool>();
   Stream get counterStream => counterController.stream;
 
+  @override
   void dispose() {
     super.dispose();
     counterController.close();

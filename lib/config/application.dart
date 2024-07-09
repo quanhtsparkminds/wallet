@@ -9,7 +9,6 @@ class Application {
 
   setup() async {
     await SPref.init();
-    // initSQLLite();
     getInfoDevice();
     await setupRepositories();
   }

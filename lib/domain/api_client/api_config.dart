@@ -1,5 +1,3 @@
-import 'package:myapp/commands/core/app_key.dart';
-
 class ApiConfig {
   ApiConfig._();
 
@@ -12,9 +10,4 @@ class ApiConfig {
   static const Duration connectionTimeout = Duration(milliseconds: 15000);
   static const String login = '/auth/login';
   static const String profile = '/auth/profile';
-
-  static const header = {
-    'Authorization': 'Bearer ${AppKey.xToken}',
-    'content-Type': 'application/json',
-  };
 }
